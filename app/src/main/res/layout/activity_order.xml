@@ -74,10 +74,12 @@
         android:layout_width="149dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="@string/phone_hint"
         android:inputType="phone"
         app:layout_constraintBaseline_toBaselineOf="@+id/phone_label"
+        app:layout_constraintEnd_toStartOf="@+id/label_spinner"
         app:layout_constraintStart_toEndOf="@+id/phone_label" />
 
     <TextView
@@ -124,7 +126,7 @@
 
     <Spinner
         android:id="@+id/label_spinner"
-        android:layout_width="0dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"

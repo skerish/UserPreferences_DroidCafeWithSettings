@@ -26,12 +26,6 @@ public class OrderActivity extends AppCompatActivity implements AdapterView.OnIt
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order);
 
-        TextView textView = findViewById(R.id.order_textView);
-
-        Intent intent = getIntent();
-        String msg = "Order: " + intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-        textView.setText(msg);
-
         RadioButton default_btn = findViewById(R.id.sameday);
         default_btn.setChecked(true);
 
