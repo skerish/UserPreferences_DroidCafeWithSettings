@@ -28,6 +28,7 @@
     <string name="action_status_message">You selected Status.</string>
     <string name="action_favorites_message">You selected Favorites.</string>
     <string name="action_contact_message">You selected Contact.</string>
+    <string name="label2">Order Activity</string>
 
     <string-array name="spinner_choices">
         <item>Home</item>
