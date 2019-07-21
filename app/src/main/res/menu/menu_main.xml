@@ -30,4 +30,10 @@
         app:showAsAction="ifRoom"
         android:icon="@drawable/ic_favorites"/>
 
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/settings"
+        android:orderInCategory="101"
+        app:showAsAction="never"/>
+
 </menu>

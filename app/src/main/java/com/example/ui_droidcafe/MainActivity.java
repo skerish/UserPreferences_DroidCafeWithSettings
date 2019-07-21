@@ -3,13 +3,13 @@ package com.example.ui_droidcafe;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.DialogFragment;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.view.ContextMenu;
 import android.view.MenuInflater;
 import android.view.View;
@@ -111,6 +111,10 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.action_contacts:
                 displayToast(getString(R.string.action_contact_message));
+                return true;
+            case R.id.action_settings:
+                Intent intent1 = new Intent(this, SettingsActivity.class);
+                startActivity(intent1);
                 return true;
         }
 

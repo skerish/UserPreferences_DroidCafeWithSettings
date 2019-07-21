@@ -1,0 +1,24 @@
+
+<androidx.preference.PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        app:key="social_recommendation"
+        app:title="Enable Social Recommendation"
+        app:summaryOn="Recommendation for people to contact based on your order history"
+        app:summaryOff="Recommendation disabled"/>
+
+    <EditTextPreference
+        app:key="display_name"
+        app:title="Display Name"
+        app:useSimpleSummaryProvider="true"/>
+
+    <ListPreference
+        app:defaultValue="never"
+        app:entries="@array/add_friends"
+        app:entryValues="@array/add_friends_values"
+        app:key="add_friends"
+        app:title="Add friends to messages"
+        app:useSimpleSummaryProvider="true" />
+
+</androidx.preference.PreferenceScreen>
